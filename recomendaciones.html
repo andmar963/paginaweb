@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomas Gaming</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}    
+body{
+    background: #1a0327;
+    font-family: 'Poppins', sans-serif;
+    height: 350vh;
+}
+/* 1re fondo */
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(186, 87, 87, 0.5)), url(../images/reemp1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*cabecera */
+header{
+    width: 100%;
+    height: 10vh;
+    background:rgba(4, 4, 4, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 300px;
+    height: 10vh;
+    background: #550381;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    clip-path: polygon(0 0, 100% 0, 64% 100%, 0% 100%);
+    padding: 10px;
+    line-height: 1.3rem;
+}
+.logo p{
+    width: 130px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.logo .fas{
+    font-size: 50px;
+}
+ul.navbar{
+    display: flex;
+    list-style: none;
+}
+ul.navbar li{
+    width: 120px;
+}
+ul.navbar li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+ul.navbar li a.active{
+    color: #FEC53A;
+}
+ul.navbar li a:hover:not(.active){
+    color: #FEC53A;
+}
+#btn{
+    width: 250px;
+    height: 10vh;
+    background: #FEC53A;
+    color: #000;
+    outline: none;
+    border: none;
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 0% 100%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 40px;
+}
+#btn .fas{
+    margin-right: 10px;
+}
+.contenedor {
+
+display: flex;
+
+flex-wrap: wrap; /* Esto permite que los artículos se envuelvan a una nueva línea si no hay suficiente espacio */
+
+}
+
+.articulo {
+
+flex: 1 1 300px; /* Esto hace que los artículos ocupen el mismo ancho y puedan crecer si hay espacio disponible */
+
+margin: 10px; /* Agrega un margen entre los artículos */
+
+border: 1px solid #ccc; /* Agrega un borde a los artículos */
+
+padding: 10px; /* Añade espacio interno para el contenido */
+
+}
+
+.detalle {
+
+margin-top: 10px; /* Agrega espacio entre el artículo y su detalle */
+
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-gamepad"></i>
+            <p>The Game Zone</p>
+        </div>
+        <ul class="navbar">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="analisis.html" class="active">Analsis</a></li>
+            <li><a href="videojuegos.html">Juegos</a></li>
+            <li><a href="recomendaciones.html">Recomendaciones</a></li>
+        </ul>
+        <a href="https://andmar963.github.io/Ejemplo/" id="btn"><i class="fas fa-play"></i>My perfil</a>
+    </header>
+    <main>
+        < <div class="contenedor">
+
+            <div class="articulo">
+    
+                <h2>Artículo 1</h2>
+    
+                <p>Descripción del artículo 1.</p>
+    
+                <div class="detalle">
+    
+                    Detalle del artículo 1.
+    
+                </div>
+    
+            </div>
+    
+            <div class="articulo">
+    
+                <h2>Artículo 2</h2>
+    
+                <p>Descripción del artículo 2.</p>
+    
+                <div class="detalle">
+    
+                    Detalle del artículo 2.
+    
+                </div>
+    
+            </div>
+    
+            <!-- Agrega más artículos si es necesario -->
+    
+        </div>
+    </main>
+</body>
+</html>

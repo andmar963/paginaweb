@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomas Gaming</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #1a0327;
+            font-family: 'Poppins', sans-serif;
+            height: 350vh;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5),rgba(186, 87, 87, 0.5)), url(../images/reemp1.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        header{
+            width: 100%;
+            height: 10vh;
+            background:rgba(4, 4, 4, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            width: 300px;
+            height: 10vh;
+            background: #550381;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            clip-path: polygon(0 0, 100% 0, 64% 100%, 0% 100%);
+            padding: 10px;
+            line-height: 1.3rem;
+        }
+        .logo p{
+            width: 130px;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        .logo .fas{
+            font-size: 50px;
+        }
+        ul.navbar{
+            display: flex;
+            list-style: none;
+        }
+        ul.navbar li{
+            width: 120px;
+        }
+        ul.navbar li a{
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        ul.navbar li a.active{
+            color: #FEC53A;
+        }
+        ul.navbar li a:hover:not(.active){
+            color: #FEC53A;
+        }
+        #btn{
+            width: 250px;
+            height: 10vh;
+            background: #FEC53A;
+            color: #000;
+            outline: none;
+            border: none;
+            clip-path: polygon(35% 0, 100% 0, 100% 100%, 0% 100%);
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: right;
+            padding-right: 40px;
+        }
+        #btn .fas{
+            margin-right: 10px;
+        }
+        .posts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px auto;
+            width: 80%;
+        }
+        .post {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: 48%;
+            padding: 10px;
+        }
+        .post img {
+            width: 100%;
+            height: auto;
+        }
+        .post h2 {
+            color: #333;
+        }
+        .post p {
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <p>The Game Zone</p>
+            </div>
+            <ul class="navbar">
+                <li><a href="#" class="active">XBOX</a></li>
+                <li><a href="index.html">ARCADE</a></li>
+                <li><a href="#">FIFA 21</a></li>
+                <li><a href="#">PES 4</a></li>
+                <li><a href="#">NINTEDO</a></li>
+                <li><a href="#">NBA MATCH</a></li>
+            </ul>
+            <a href="https://andmar963.github.io/Ejemplo/" id="btn"><i class="fas fa-play"></i>My perfil</a>
+        </header>
+        <div class="posts">
+            <div class="post">
+                <img src="https://via.placeholder.com/300" alt="Juego 1">
+                <h2>Reseña de Juego 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque leo nec urna fermentum, a tincidunt nisi facilisis.</p>
+            </div>
+            <div class="post">
+                <img src="https://via.placeholder.com/300" alt="Juego 2">
+                <h2>Reseña de Juego 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque leo nec urna fermentum, a tincidunt nisi facilisis.</p>
+            </div>
+            <!-- Añade más reseñas aquí -->
+        </div>
+        <footer>
+            <p>&copy; 2024 Blog de Videojuegos. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
